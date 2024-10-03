@@ -1,3 +1,15 @@
 <h1>Hello World!</h1>
 
 <p>This is the Index Page</p>
+
+<h4>My name is {{ first_name }}</h4>
+
+<p>{{ stuff|safe }}</p>
+
+<h3>Favorite Pizza</h3>
+
+{% for topping in favorite_pizza %}
+{{ topping }}
+{% endfor %}
+<br>
+{{ favorite_pizza.0 }}
